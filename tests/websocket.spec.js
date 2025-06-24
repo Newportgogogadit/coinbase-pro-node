@@ -1,9 +1,3 @@
-const assert = require('assert');
-const CoinbasePro = require('../index.js');
-const testserver = require('./lib/ws_testserver');
-
-let port = 56632;
-
 suite('WebsocketClient', () => {
   test('connects to specified server', done => {
     const server = testserver(port, () => {
